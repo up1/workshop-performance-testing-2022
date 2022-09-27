@@ -47,7 +47,7 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
 
   influxdb:
-    image: influxdb
+    image: influxdb:1.8
     container_name: influxdb
     ports:
       - '8086:8086'
