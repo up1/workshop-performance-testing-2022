@@ -1,9 +1,10 @@
 version: "3"
 services:
-  service_java:
+  service-java:
     build: 
       context: ./java-performance-testing
       dockerfile: Dockerfile
+    container_name: service-java
     ports:
       - 8080:8080
 
